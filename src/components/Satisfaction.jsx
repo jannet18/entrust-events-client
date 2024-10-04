@@ -1,0 +1,189 @@
+import React from "react";
+import { FaArrowRightLong } from "react-icons/fa6";
+
+function Satisfaction() {
+  return (
+    <div className="flex flex-col items-center justify-center space-y-20 p-10">
+      <div className="flex flex-col items-center justify-center space-y-4 py-10">
+        <div className="flex items-center justify-center space-x-3">
+          <h1 className="uppercase text-3xl font-bold text-[#095749]">
+            Why Entrust
+          </h1>
+        </div>
+        <h1 className="capitalize text-8xl text-[#095749]">
+          Satisfaction guaranteed
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-3 space-x-8 space-y-10">
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <i className="">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/3461/3461980.png"
+              alt=""
+              className="w-40 h-40 "
+            />
+          </i>
+          <h1 className="text-[#095749] font-semibold text-4xl">
+            Best Chef Cook
+          </h1>
+          <p className="tracking-widest text-md font-thin">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+            quae totam sapiente exercitationem placeat voluptatem vitae,
+            distinctio quasi iste cum laboriosam amet voluptate fugiat dicta
+            error recusandae impedit adipisci nobis?
+          </p>
+        </div>
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <icon>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Xmktm_3M3mxwUkgzhG10FgqujlqPI7H-OZmLu_TT9djn9z_J6DD1m0twZbyZAHedHuY&usqp=CAU"
+              alt=""
+              className="w-40 h-40"
+            />
+          </icon>
+          <h1 className="text-[#095749] font-semibold text-4xl">
+            Delicious Food
+          </h1>
+          <p className="tracking-widest text-md font-thin">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+            quae totam sapiente exercitationem placeat voluptatem vitae,
+            distinctio quasi iste cum laboriosam amet voluptate fugiat dicta
+            error recusandae impedit adipisci nobis?
+          </p>
+        </div>
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <icon>
+            <img
+              src="https://thumbs.dreamstime.com/b/crown-number-one-laurel-icon-shadow-crown-number-one-laurel-icon-shadow-simple-vector-logo-280837810.jpg?w=768"
+              alt=""
+              className="w-40 h-40"
+            />
+          </icon>
+          <h1 className="text-[#095749] font-semibold text-4xl">
+            High Quality Services
+          </h1>
+          <p className="tracking-widest text-md font-thin">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+            quae totam sapiente exercitationem placeat voluptatem vitae,
+            distinctio quasi iste cum laboriosam amet voluptate fugiat dicta
+            error recusandae impedit adipisci nobis?
+          </p>
+        </div>
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <icon>
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/018/997/467/non_2x/seasonal-menu-icon-in-outline-style-cauliflower-peppers-carrots-vegetables-fall-into-the-bowl-parsley-celery-and-peas-are-added-to-the-dish-vegan-food-or-salad-vector.jpg"
+              alt=""
+              className="w-40 h-40"
+            />
+          </icon>
+          <h1 className="text-[#095749] font-semibold text-4xl">
+            Seasonal Menus
+          </h1>
+          <p className="tracking-widest text-md font-thin">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+            quae totam sapiente exercitationem placeat voluptatem vitae,
+            distinctio quasi iste cum laboriosam amet voluptate fugiat dicta
+            error recusandae impedit adipisci nobis?
+          </p>
+        </div>
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <icon>
+            <img
+              src="https://static.vecteezy.com/system/resources/thumbnails/037/740/791/small/groceries-line-icon-background-white-vector.jpg"
+              alt=""
+              className="w-40 h-40"
+            />
+          </icon>
+          <h1 className="text-[#095749] font-semibold text-4xl">
+            Local Sourced Ingredients
+          </h1>
+          <p className="tracking-widest text-md font-thin">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+            quae totam sapiente exercitationem placeat voluptatem vitae,
+            distinctio quasi iste cum laboriosam amet voluptate fugiat dicta
+            error recusandae impedit adipisci nobis?
+          </p>
+        </div>
+        <div className="flex flex-col items-center justify-center space-y-4">
+          <icon>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU1pgP8kKypy_E9XRa7aU4S8dOuMGXfp5UQg&s"
+              alt=""
+              className="w-40 h-40"
+            />
+          </icon>
+          <h1 className="text-[#095749] font-semibold text-4xl">
+            Fits Your Budget
+          </h1>
+          <p className="tracking-widest text-md font-thin">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat
+            quae totam sapiente exercitationem placeat voluptatem vitae,
+            distinctio quasi iste cum laboriosam amet voluptate fugiat dicta
+            error recusandae impedit adipisci nobis?
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col items-center space-y-6">
+        <div className="flex space-x-3">
+          <h1 className="text-xl font-thin tracking-wide">
+            Call us now
+            <span className="text-[#095749] font-semibold ml-3">
+              +25472200000
+            </span>
+          </h1>
+          <span>|</span>
+          <p className="text-xl font-thin tracking-wide">
+            Request a quote without obligation
+          </p>
+        </div>
+        <button className="flex items-center gap-2  capitalize py-3 px-6 rounded-3xl bg-[#ebc6a4] hover:bg-[#095749] hover:text-white">
+          Request a quote <FaArrowRightLong />
+        </button>
+        <div>
+          <img
+            src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+            alt="cook-image"
+            className="w-screen h-[200px] object-cover"
+          />
+          <div className="relative grid grid-cols-1 md:grid-cols-2">
+            <div>
+              <img
+                src="https://meetingsitespro.com/wp-content/uploads/2020/08/Portioned-2BPlate.jpg"
+                alt="food-plating"
+                className="w-screen h-full object-cover"
+              />
+              <div className="absolute top-[25%] left-[20%] flex flex-col items-center justify-center space-y-4 text-white">
+                <div className="flex flex-col items-center">
+                  <span className="uppercase">Preferred</span>
+                  <h1 className="text-5xl font-bold">Menus</h1>
+                </div>
+                <button className="flex items-center gap-2 capitalize py-3 px-6 text-[#333] rounded-3xl bg-[#ebc6a4] hover:bg-[#095749] hover:text-white">
+                  Explore now <FaArrowRightLong />
+                </button>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://media.istockphoto.com/id/908077986/photo/wedding-ceremony.jpg?s=612x612&w=0&k=20&c=dkRXHQpOr4lkyHtE3RV4qpgp3QloHtkfYtQ6qzFN4xw="
+                alt="venues-image"
+                className="w-screen h-full object-cover"
+              />
+              <div className="absolute top-[25%] right-[20%] flex flex-col items-center justify-center text-white space-y-4">
+                <div className="flex flex-col items-center">
+                  <span className="uppercase">exclusive</span>
+                  <h1 className="text-5xl font-bold">Venues</h1>
+                </div>
+                <button className="flex items-center gap-2 capitalize py-3 px-6 text-[#333] rounded-3xl bg-[#ebc6a4] hover:bg-[#095749] hover:text-white">
+                  Explore now <FaArrowRightLong />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Satisfaction;
