@@ -2,7 +2,8 @@ import React from "react";
 
 const PreviewFrame = () => {
   return (
-    <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+    // <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
+    <div className="container mx-auto px-2 py-4 lg:px-6 lg:pt-24">
       <div className="flex flex-col items-center space-y-2">
         <p className="uppercase tracking-wider font-semibold text-teal-700">
           check our recent projects

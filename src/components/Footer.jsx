@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-zinc-50 text-center text-surface/75 dark:bg-[#095749]  dark:text-white lg:text-left">
       <div className="mx-6 py-10 text-center md:text-left">
-        <div className="grid grid-cols-1 md:gap-14 md:grid-cols-3">
+        <div className="grid grid-cols-1 md:gap-14 md:grid-cols-3 gap-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-14">
             <div className="grid text-center space-y-10">
               <div className="flex flex-col space-y-3">
@@ -85,7 +85,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="grid text-center space-y-10">
-            <div className="relative grid grid-cols-1 space-y-4">
+            <div className="relative grid grid-cols-1 gap-4">
               <h1 className="text-3xl font-bold ">Entrust Events</h1>
               <p className="text-xl font-thin">
                 Let's create unforgettable moments with exceptional cataring!
@@ -105,7 +105,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-            <div className="grid text-left space-y-10">
+            <div className="grid space-y-10">
               <div>
                 <h6 className="mb-4 text-3xl flex justify-center font-semibold uppercase md:justify-start">
                   Explore
@@ -124,7 +124,7 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div className="grid text-left space-y-10">
+            <div className="grid space-y-10">
               <div>
                 <h6 className="mb-4 text-3xl flex justify-center font-semibold uppercase md:justify-start">
                   Events

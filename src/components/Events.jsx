@@ -1,17 +1,17 @@
 import React from "react";
 import { FaCircle } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
-
+import Satisfaction from "./Satisfaction";
+import Team from "./Team";
 function Events() {
   return (
     <>
       <section className="bg-[#f6f0ea] p-6 md:p-16">
         <div className="flex flex-col items-center justify-center space-y-4 py-10 text-center">
-          {/* <div className="flex items-center justify-center space-x-3"> */}
           <h1 className="uppercase text-2xl md:text-3xl font-bold text-[#095749]">
             What we do
           </h1>
-          {/* </div> */}
+
           <h1 className="capitalize text-5xl md:text-7xl text-[#095749]">
             Events we cater
           </h1>
@@ -130,6 +130,8 @@ function Events() {
           </div>
         </div>
       </section>
+      <Satisfaction />
+      <Team />
     </>
   );
 }
