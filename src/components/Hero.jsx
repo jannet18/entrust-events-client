@@ -34,7 +34,7 @@ function Hero() {
             href="#"
             className="mt-8 inline-block py-2 px-6 rounded-lg bg-orange-500 hover:bg-orange-600"
           >
-            Get a Quote
+            Get a Free Quote
           </a>
         </div>
       </div>

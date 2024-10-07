@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Events from "./components/Events";
 import Satisfaction from "./components/Satisfaction";
 import Team from "./components/Team";
+import Blog from "./pages/Blog";
+import Partners from "./pages/Partners";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
       <Satisfaction />
       <Team />
       <PreviewFrame />
+      <Blog />
+      <Partners />
       <Footer />
     </div>
   );

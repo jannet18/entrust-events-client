@@ -10,11 +10,11 @@ function Satisfaction() {
             Why Entrust
           </h1>
         </div>
-        <h1 className="capitalize text-8xl text-[#095749]">
+        <h1 className="capitalize text-4xl md:text-6xl text-[#095749] text-center">
           Satisfaction guaranteed
         </h1>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 space-x-8 space-y-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <div className="flex flex-col items-center justify-center space-y-4">
           <i className="">
             <img
@@ -34,13 +34,13 @@ function Satisfaction() {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center space-y-4">
-          <icon>
+          <i>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Xmktm_3M3mxwUkgzhG10FgqujlqPI7H-OZmLu_TT9djn9z_J6DD1m0twZbyZAHedHuY&usqp=CAU"
               alt=""
               className="w-40 h-40"
             />
-          </icon>
+          </i>
           <h1 className="text-[#095749] font-semibold text-4xl">
             Delicious Food
           </h1>
@@ -52,13 +52,13 @@ function Satisfaction() {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center space-y-4">
-          <icon>
+          <i>
             <img
               src="https://thumbs.dreamstime.com/b/crown-number-one-laurel-icon-shadow-crown-number-one-laurel-icon-shadow-simple-vector-logo-280837810.jpg?w=768"
               alt=""
               className="w-40 h-40"
             />
-          </icon>
+          </i>
           <h1 className="text-[#095749] font-semibold text-4xl">
             High Quality Services
           </h1>
@@ -70,13 +70,13 @@ function Satisfaction() {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center space-y-4">
-          <icon>
+          <i>
             <img
               src="https://static.vecteezy.com/system/resources/previews/018/997/467/non_2x/seasonal-menu-icon-in-outline-style-cauliflower-peppers-carrots-vegetables-fall-into-the-bowl-parsley-celery-and-peas-are-added-to-the-dish-vegan-food-or-salad-vector.jpg"
               alt=""
               className="w-40 h-40"
             />
-          </icon>
+          </i>
           <h1 className="text-[#095749] font-semibold text-4xl">
             Seasonal Menus
           </h1>
@@ -88,13 +88,13 @@ function Satisfaction() {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center space-y-4">
-          <icon>
+          <i>
             <img
               src="https://static.vecteezy.com/system/resources/thumbnails/037/740/791/small/groceries-line-icon-background-white-vector.jpg"
               alt=""
               className="w-40 h-40"
             />
-          </icon>
+          </i>
           <h1 className="text-[#095749] font-semibold text-4xl">
             Local Sourced Ingredients
           </h1>
@@ -106,13 +106,13 @@ function Satisfaction() {
           </p>
         </div>
         <div className="flex flex-col items-center justify-center space-y-4">
-          <icon>
+          <i>
             <img
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU1pgP8kKypy_E9XRa7aU4S8dOuMGXfp5UQg&s"
               alt=""
               className="w-40 h-40"
             />
-          </icon>
+          </i>
           <h1 className="text-[#095749] font-semibold text-4xl">
             Fits Your Budget
           </h1>
@@ -137,7 +137,7 @@ function Satisfaction() {
             Request a quote without obligation
           </p>
         </div>
-        <button className="flex items-center gap-2  capitalize py-3 px-6 rounded-3xl bg-[#ebc6a4] hover:bg-[#095749] hover:text-white">
+        <button className="flex items-center gap-2 tracking-wider capitalize py-3 px-6 rounded-3xl bg-[#ebc6a4] hover:bg-[#095749] hover:text-white">
           Request a quote <FaArrowRightLong />
         </button>
         <div>
@@ -147,34 +147,39 @@ function Satisfaction() {
             className="w-screen h-[200px] object-cover"
           />
           <div className="relative grid grid-cols-1 md:grid-cols-2">
-            <div>
+            <div className="relative">
               <img
                 src="https://meetingsitespro.com/wp-content/uploads/2020/08/Portioned-2BPlate.jpg"
                 alt="food-plating"
-                className="w-screen h-full object-cover"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute top-[25%] left-[20%] flex flex-col items-center justify-center space-y-4 text-white">
+              <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-white bg-black bg-opacity-30">
                 <div className="flex flex-col items-center">
-                  <span className="uppercase">Preferred</span>
-                  <h1 className="text-5xl font-bold">Menus</h1>
+                  <span className="uppercase text-sm md:text-base">
+                    Preferred
+                  </span>
+                  <h1 className="text-3xl md:text-5xl font-bold">Menus</h1>
                 </div>
-                <button className="flex items-center gap-2 capitalize py-3 px-6 text-[#333] rounded-3xl bg-[#ebc6a4] hover:bg-[#095749] hover:text-white">
+                <button className="flex items-center gap-2 py-2 px-4 text-sm md:py-3 md:px-6 text-[#333] rounded-3xl bg-[#ebc6a4] hover:bg-[#095749] hover:text-white transition-all">
                   Explore now <FaArrowRightLong />
                 </button>
               </div>
             </div>
-            <div>
+
+            <div className="relative">
               <img
                 src="https://media.istockphoto.com/id/908077986/photo/wedding-ceremony.jpg?s=612x612&w=0&k=20&c=dkRXHQpOr4lkyHtE3RV4qpgp3QloHtkfYtQ6qzFN4xw="
                 alt="venues-image"
-                className="w-screen h-full object-cover"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute top-[25%] right-[20%] flex flex-col items-center justify-center text-white space-y-4">
+              <div className="absolute inset-0 flex flex-col items-center justify-center space-y-4 text-white bg-black bg-opacity-30">
                 <div className="flex flex-col items-center">
-                  <span className="uppercase">exclusive</span>
-                  <h1 className="text-5xl font-bold">Venues</h1>
+                  <span className="uppercase text-sm md:text-base">
+                    Exclusive
+                  </span>
+                  <h1 className="text-3xl md:text-5xl font-bold">Venues</h1>
                 </div>
-                <button className="flex items-center gap-2 capitalize py-3 px-6 text-[#333] rounded-3xl bg-[#ebc6a4] hover:bg-[#095749] hover:text-white">
+                <button className="flex items-center gap-2 py-2 px-4 text-sm md:py-3 md:px-6 text-[#333] rounded-3xl bg-[#ebc6a4] hover:bg-[#095749] hover:text-white transition-all">
                   Explore now <FaArrowRightLong />
                 </button>
               </div>
