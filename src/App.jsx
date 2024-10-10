@@ -9,6 +9,7 @@ import Partners from "./pages/Partners";
 import { Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero";
 import Service from "./pages/Service";
+import Contacts from "./pages/Contacts";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/blog" element={<Blog />} />
         <Route path="/partners" element={<Partners />} />
         <Route path="/service" element={<Service />} />
+        <Route path="/contacts" element={<Contacts />} />
       </Routes>
 
       <Footer />

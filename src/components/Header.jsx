@@ -121,18 +121,19 @@ const Header = () => {
               <a href="/events" className="py-2 px-6 flex">
                 Services
               </a>
-              <IoMdStarOutline />
+              {/* <IoMdStarOutline />
               <a href="/rentals" className="py-2 px-6 flex">
                 Rentals
               </a>
               <IoMdStarOutline className="text-[#44786d] hover:text-white" />
+              <a href="/partners" className="py-2 px-6 flex whitespace-nowrap">
+                Venue Partners
+              </a> */}
+              <IoMdStarOutline className="text-[#44786d] hover:text-white" />
               <a href="/gallery" className="py-2 px-6 flex">
                 Gallery
               </a>
-              <IoMdStarOutline className="text-[#44786d] hover:text-white" />
-              <a href="/partners" className="py-2 px-6 flex whitespace-nowrap">
-                Venue Partners
-              </a>
+
               <IoMdStarOutline className="text-[#44786d] hover:text-white" />
               <a href="/testimonials" className="py-2 px-6 flex">
                 Testimonials
@@ -140,6 +141,10 @@ const Header = () => {
               <IoMdStarOutline className="text-[#44786d] hover:text-white" />
               <a href="/blog" className="py-2 px-6 flex">
                 Blog
+              </a>
+              <IoMdStarOutline className="text-[#44786d] hover:text-white" />
+              <a href="/contacts" className="py-2 px-6 flex">
+                Contacts
               </a>
             </nav>
             <button
