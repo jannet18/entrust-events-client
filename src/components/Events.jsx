@@ -3,6 +3,7 @@ import { FaCircle } from "react-icons/fa6";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Satisfaction from "./Satisfaction";
 import Team from "./Team";
+import { Link } from "react-router-dom";
 function Events() {
   return (
     <>
@@ -47,7 +48,7 @@ function Events() {
             </div>
 
             <button className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex items-center gap-2 uppercase py-2 px-4 md:py-3 md:px-6 rounded-full bg-orange-300 text-[#333] hover:bg-orange-400 transition-all whitespace-nowrap ">
-              Learn more
+              <Link to="/service">Learn more</Link>
               <IoIosArrowRoundForward size={24} />
             </button>
           </div>

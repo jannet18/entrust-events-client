@@ -1,19 +1,25 @@
-// Header.js
-import React from "react";
+import React, { useState } from "react";
 import Hero from "./Hero";
 import { IoMdStarOutline } from "react-icons/io";
-import { FaPhoneVolume } from "react-icons/fa6";
+import { FaBars, FaPhoneVolume } from "react-icons/fa6";
 import { FaCircle } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+import { FaTimes } from "react-icons/fa";
 
 const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className="relative overflow-hidden">
       {/* <div className="lg:flex hidden tracking-widest text-gray-800 items-center justify-between gap-10"> */}
       <div className="lg:flex flex-col md:flex-row space-y-3 items-center justify-evenly py-3 px-4 gap-10">
         <div className="flex items-center gap-6">
           <p className="uppercase flex items-center gap-3 whitespace-nowrap">
-            Call us <FaPhoneVolume className="text-[#e3c1a0]" />
+            <FaPhoneVolume className="text-[#e3c1a0]" />
             <span>+2547657382</span>
           </p>
           <button className="bg-[#e3c1a0] px-3 py-2 whitespace-nowrap rounded-md hover:bg-[#095749] hover:text-white">
@@ -137,60 +143,62 @@ const Header = () => {
               </a>
             </nav>
             <button
-              className="lg:hidden flex flex-col ml-16"
+              type="button"
+              className="lg:hidden p-2 flex flex-col ml-16 cursor-pointer text-white"
               aria-label="Toggle navigation"
+              onClick={handleMenu}
             >
-              <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-              <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
-              <span className="w-6 h-1 bg-gray-800 dark:bg-white mb-1"></span>
+              {showMenu ? <FaTimes size={24} /> : <FaBars size={24} />}
             </button>
+            {showMenu && (
+              <div className="absolute top-[1.95%] left-0 w-[300px] h-fit md:top-[199px] text-white bg-black opacity-100 shadow-lg z-50 lg:hidden">
+                <ul className="flex flex-col items-center space-y-4 p-4">
+                  <li className="border-b w-full">
+                    <Link to="/about" className="py-1 px-6 flex">
+                      About
+                    </Link>
+                  </li>
+                  <li className="border-b w-full">
+                    <Link to="/events" className="py-1 px-6 flex">
+                      Services
+                    </Link>
+                  </li>
+                  <li className="border-b w-full">
+                    <Link to="/rentals" className="py-1 px-6 flex">
+                      Rentals
+                    </Link>
+                  </li>
+                  <li className="border-b w-full">
+                    <Link to="/gallery" className="py-1 px-6 flex">
+                      Gallery
+                    </Link>
+                  </li>
+                  <li className="border-b w-full">
+                    <Link
+                      to="/partners"
+                      className="py-1 px-6 flex whitespace-nowrap"
+                    >
+                      Venue Partners
+                    </Link>
+                  </li>
+                  <li className="border-b w-full">
+                    <Link to="/testimonials" className="py-1 px-6 flex">
+                      Testimonials
+                    </Link>
+                  </li>
+                  <li className="border-b w-full">
+                    <Link to="/blog" className="py-1 px-6 flex">
+                      Blog
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </header>
-      <Hero />
+      {/* <Hero isHeroBlurred={isHeroBlurred} /> */}
     </div>
-    // <div className="relative overflow-hidden">
-    //   <header className="bg-[#095749] h-24 sm:h-32 flex items-center z-30 w-full">
-    //     <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between flex-wrap">
-    //       <div className="uppercase text-teal-800 dark:text-[#e3c1a0] font-black text-3xl">
-    //         <a href="/">Entrust Events</a>
-    //       </div>
-    //       <div className="flex flex-col lg:flex-row items-center lg:gap-10">
-    //         <div className="flex items-center gap-6 text-white">
-    //           <p className="flex items-center gap-3 whitespace-nowrap">
-    //             Call us <FaPhoneVolume className="text-[#e3c1a0]" />
-    //             <span>+2547657382</span>
-    //           </p>
-    //           <button className="bg-[#e3c1a0] text-black font-semibold py-2 px-4 rounded hover:bg-[#c8a27c] transition">
-    //             Book a Consultation
-    //           </button>
-    //         </div>
-    //         <div className="flex items-center gap-6 mt-4 lg:mt-0">
-    //           {/** Icons Section **/}
-    //           {["facebook", "twitter", "instagram", "linkedin"].map(
-    //             (platform) => (
-    //               <a
-    //                 key={platform}
-    //                 href={`#!`}
-    //                 className="text-[#e3c1a0] hover:text-white transition"
-    //               >
-    //                 <svg
-    //                   xmlns="http://www.w3.org/2000/svg"
-    //                   fill="currentColor"
-    //                   viewBox="0 0 448 512"
-    //                   className="h-4 w-4"
-    //                 >
-    //                   {/* Your SVG paths for each platform */}
-    //                 </svg>
-    //               </a>
-    //             )
-    //           )}
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </header>
-    //   <Hero />
-    // </div>
   );
 };
 

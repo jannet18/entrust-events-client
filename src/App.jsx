@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import PreviewFrame from "./components/PreviewFrame";
 import Footer from "./components/Footer";
@@ -7,17 +7,21 @@ import Team from "./components/Team";
 import Blog from "./pages/Blog";
 import Partners from "./pages/Partners";
 import { Routes, Route } from "react-router-dom";
+import Hero from "./components/Hero";
+import Service from "./pages/Service";
 
 const App = () => {
   return (
     <>
+      <Header />
       <Routes>
-        <Route path="/" element={<Header />} />
+        <Route path="/" element={<Hero />} />
         <Route path="/events" element={<Events />} />
         <Route path="/team" element={<Team />} />
         <Route path="/gallery" element={<PreviewFrame />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/partners" element={<Partners />} />
+        <Route path="/service" element={<Service />} />
       </Routes>
 
       <Footer />
