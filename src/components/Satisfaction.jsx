@@ -64,7 +64,7 @@ function Satisfaction() {
                 className="w-40 h-40 "
               />
             </i>
-            <h1 className="text-[#095749] font-semibold whitespace-nowrap text-3xl md:text-5xl">
+            <h1 className="text-[#095749] font-semibold text-center text-3xl md:text-5xl">
               {operation.title}
             </h1>
             <p className="tracking-widest text-md font-thin">
