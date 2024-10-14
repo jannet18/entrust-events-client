@@ -86,7 +86,7 @@ const Footer = () => {
           </div>
           <div className="grid text-center space-y-10">
             <div className="relative grid grid-cols-1 gap-4">
-              <h1 className="text-3xl font-bold ">Entrust Events</h1>
+              <h1 className="text-3xl font-bold ">Entrust Programs</h1>
               <p className="text-xl font-thin">
                 Let's create unforgettable moments with exceptional cataring!
               </p>

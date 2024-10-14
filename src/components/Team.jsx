@@ -16,7 +16,7 @@ function Team() {
             Our Team
           </h1>
         </div>
-        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 m-20">
+        <div className="relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-10 m-10 md:m-20">
           {[
             {
               name: "Albert Flores",
@@ -70,8 +70,7 @@ function Team() {
             playsInline
             className="background-clip"
           />
-
-          <div className="absolute flex items-center justify-between w-full top-[40%]">
+          <div className="absolute flex items-center justify-between w-full top-[22%] md:top-[30%]">
             <div className="enjoy-slide flex items-center justify-center space-x-24 p-6 uppercase text-[#e3c1a0]">
               <span className="text-8xl font-bold flex items-center gap-10">
                 Healthy <IoMdStarOutline className="w-14 h-14" />

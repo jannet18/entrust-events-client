@@ -2,13 +2,12 @@ import React from "react";
 
 const PreviewFrame = () => {
   return (
-    // <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-24">
-    <div className="container mx-auto px-2 py-4 lg:px-6 lg:pt-24">
-      <div className="flex flex-col items-center space-y-2">
+    <div className="container mx-auto px-2 py-4 lg:px-6 lg:pt-24  space-y-6">
+      <div className="flex flex-col items-center space-y-3">
         <p className="uppercase tracking-wider font-semibold text-teal-700">
           check our recent projects
         </p>
-        <h1 className="text-7xl font-bold capitalize  text-teal-900">
+        <h1 className="md:text-7xl text-6xl font-bold capitalize whitespace-nowrap text-teal-900 ">
           Photo Gallery
         </h1>
       </div>
