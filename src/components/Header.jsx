@@ -123,7 +123,7 @@ const Header = () => {
               to="/"
               className="uppercase text-teal-800 dark:text-[#e3c1a0] font-black text-3xl"
             >
-              Entrust Programs
+              Entrust Productions
             </Link>
             <button
               onClick={handleMenu}
