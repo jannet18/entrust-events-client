@@ -34,21 +34,23 @@ function Contacts() {
             <MdOutlineEmail className="w-10 h-10 bg-white p-2 text-[#333] rounded-full" />
             <div className="text-2xl">
               <h1>Email Address</h1>
-              <a href="mailto:"></a>
+              <a href="mailto:info@entrustproductions.org">
+                info@entrustproductions.org
+              </a>
             </div>
           </div>
           <div className="bg-gray-100 hover:bg-[#095749] hover:text-white flex items-center gap-4 p-3 md:p-6">
             <FaPhone className="w-10 h-10 bg-white p-2  text-[#333] rounded-full" />
             <div className="text-2xl">
               <h1>Phone Number</h1>
-              <a href="mailto:">+254 72200000</a>
+              <a href="tel:0748149943">+254 748149943</a>
             </div>
           </div>
           <div className="bg-gray-100 hover:bg-[#095749] hover:text-white flex items-center gap-4 p-3 md:p-6">
             <IoLocationOutline className="w-10 h-10 bg-white text-[#333] p-2 rounded-full" />
             <div className="text-2xl">
               <h1>Office Address</h1>
-              <a href="mailto:"></a>
+              <a href="#">Tigoni Baptist Church</a>
             </div>
           </div>
         </div>

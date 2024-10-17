@@ -7,7 +7,7 @@ const PreviewFrame = () => {
         <p className="uppercase tracking-wider font-semibold text-teal-700">
           check our recent projects
         </p>
-        <h1 className="md:text-7xl text-6xl font-bold capitalize whitespace-nowrap text-teal-900 ">
+        <h1 className="md:text-6xl text-4xl font-bold capitalize whitespace-nowrap text-teal-900 ">
           Photo Gallery
         </h1>
       </div>

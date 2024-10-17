@@ -29,10 +29,12 @@ const Header = () => {
         <div className="flex items-center gap-6">
           <p className="uppercase flex items-center gap-3 whitespace-nowrap">
             <FaPhoneVolume className="text-[#e3c1a0]" />
-            <span>+2547657382</span>
+            <a href="tel:0748149943">+254748149943</a>
           </p>
           <button className="bg-[#e3c1a0] px-3 py-2 whitespace-nowrap rounded-md hover:bg-[#095749] hover:text-white">
-            Book a Consultation
+            <Link to="https://airtable.com/appwtrbbamJqyKLJ9/pagPa6N7Qzd3qrpn1/form">
+              Book a Consultation
+            </Link>
           </button>
         </div>
         <div className="flex justify-center">
@@ -127,6 +129,7 @@ const Header = () => {
             </Link>
             <button
               onClick={handleMenu}
+              // onTouchMove={handleMenu}
               className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
             >
               {showMenu ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -165,8 +168,8 @@ const Header = () => {
                   </svg>
                 </button>
                 {aboutDropdown && (
-                  <div className="absolute right-0 md:right-[50%] px-6 md:z-20 w-full mt-2 origin-top-left rounded-md shadow-lg md:w-56">
-                    <div className="px-2 py-2 bg-white text-[#333] rounded-md shadow dark-mode:bg-gray-800">
+                  <div className="absolute top-[60px] right-0 md:right-[50%] px-6 md:z-20 w-full mt-2 origin-top-left rounded-md md:w-56">
+                    <div className="px-2 py-2 bg-white text-[#333] rounded-b-md shadow dark-mode:bg-gray-800">
                       <a
                         className="block uppercase px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         href="/"
@@ -203,8 +206,8 @@ const Header = () => {
                   </svg>
                 </button>
                 {servicesDropdown && (
-                  <div className="absolute right-0 md:right-[40%] px-6 md:z-20 w-full mt-2 origin-top-left rounded-md shadow-lg md:w-56">
-                    <div className="px-2 py-2 bg-white text-[#333] rounded-md shadow dark-mode:bg-gray-800">
+                  <div className="absolute top-[60px] right-0 md:right-[40%] px-6 md:z-20 w-full mt-2 origin-top-left rounded-md md:w-56">
+                    <div className="px-2 py-2 bg-white text-[#333] rounded-b-md shadow dark-mode:bg-gray-800">
                       <a
                         className="block uppercase px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
                         href="/"
@@ -220,24 +223,6 @@ const Header = () => {
                     </div>
                   </div>
                 )}
-                {/* {servicesDropdown && (
-                  <div className="absolute right-0 md:right-[40%] px-6 w-full mt-2 md:z-20 origin-top-left rounded-md shadow-lg md:w-56">
-                    <div className="px-2 py-2 bg-white text-[#333] rounded-md shadow">
-                      <a
-                        className="block uppercase px-4 py-2 text-sm rounded-md font-semibold hover:bg-gray-200 focus:bg-gray-200"
-                        href="#"
-                      >
-                        Rentals
-                      </a>
-                      <a
-                        className="block uppercase px-4 py-2 text-sm rounded-mdfont-semibold hover:bg-gray-200 focus:bg-gray-200"
-                        href="#"
-                      >
-                        Venue Partners
-                      </a>
-                    </div>
-                  </div>
-                )} */}
               </div>
               <IoMdStarOutline className="text-[#44786d] hover:text-white invisible md:visible" />
               <a className="px-4 py-2 uppercase" href="/gallery">
@@ -254,70 +239,10 @@ const Header = () => {
               >
                 Contact Us
               </a>
-              {/* <a className="px-4 py-2 uppercase" href="/">
-                Home
-              </a>
-              <IoMdStarOutline className="text-[#44786d] hover:text-white invisible md:visible" />
-              <a className="px-4 py-2 uppercase" href="/gallery">
-                Portfolio/Gallery
-              </a>
-              <IoMdStarOutline className="text-[#44786d] hover:text-white invisible md:visible" />
-              <a className="px-4 py-2 uppercase" href="/testimonials">
-                Testimonials
-              </a>
-              <IoMdStarOutline className="text-[#44786d] hover:text-white invisible md:visible" />
-              <a
-                className="px-4 py-2 uppercase whitespace-nowrap"
-                href="/contacts"
-              >
-                Contact Us
-              </a> */}
             </div>
           </nav>
         </div>
       </div>
-      {/* <div className="relative w-full text-white bg-[#095749]">
-        <div className="flex flex-col px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
-          <div className="p-4 flex flex-row items-center justify-between">
-            <Link
-              to="/"
-              className="uppercase text-teal-800 dark:text-[#e3c1a0] font-black text-3xl"
-            >
-              Entrust Programs
-            </Link>
-            <button
-              onClick={handleMenu}
-              className="md:hidden rounded-lg focus:outline-none focus:shadow-outline"
-            >
-              {showMenu ? <FaTimes size={24} /> : <FaBars size={24} />}
-            </button>
-          </div>
-          <nav
-            className={`transition-all duration-300 ease-in-out overflow-hidden md:flex flex-grow items-center gap-4 flex-col md:flex-row space-y-2 md:space-y-0 ${
-              showMenu ? "max-h-screen" : "max-h-0"
-            } md:max-h-none`}
-          >
-            <a className="px-4 py-2 uppercase" href="/">
-              Home
-            </a>
-            <a className="px-4 py-2 uppercase" href="/about">
-              About
-            </a>
-            <a className="px-4 py-2 uppercase" href="/services">
-              Services
-            </a>
-            <a className="px-4 py-2 uppercase" href="/gallery">
-              Portfolio/Gallery
-            </a>
-            <a className="px-4 py-2 uppercase" href="/testimonials">
-              Testimonials
-            </a>
-            <a className="px-4 py-2 uppercase" href="/contacts">
-              Contact Us
-            </a>
-          </nav>
-        </div>
-      </div> */}
     </div>
   );
 };

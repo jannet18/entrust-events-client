@@ -47,7 +47,7 @@ function Satisfaction() {
             Why Entrust
           </h1>
         </div>
-        <h1 className="capitalize text-4xl md:text-6xl text-[#095749] whitespace-nowrap text-center">
+        <h1 className="capitalize text-3xl md:text-5xl text-[#095749] whitespace-nowrap text-center">
           Satisfaction guaranteed
         </h1>
       </div>

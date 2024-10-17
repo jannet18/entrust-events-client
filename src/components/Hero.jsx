@@ -30,13 +30,13 @@ function Hero({ showMenu }) {
           </p>
           <div className="space-x-4">
             <a
-              href="/services"
+              href="/events"
               className="mt-8 inline-block py-2 px-6 rounded-lg bg-orange-500 hover:bg-orange-600"
             >
               Explore our services
             </a>
             <a
-              href="#"
+              href="https://airtable.com/appwtrbbamJqyKLJ9/pagPa6N7Qzd3qrpn1/form"
               className="mt-8 inline-block py-2 px-6 rounded-lg bg-orange-500 hover:bg-orange-600"
             >
               Get a Free Quote

@@ -160,12 +160,17 @@ function Service() {
             ))}
           </div>
           <div className="mt-8">
-            <button
+            {/* <button
               type="submit"
               className="flex items-center justify-center gap-2 bg-[#095749] p-3 rounded-3xl text-xs uppercase text-white hover:bg-[#e3c1a0]"
+            > */}
+            <Link
+              to="https://airtable.com/appwtrbbamJqyKLJ9/pagPa6N7Qzd3qrpn1/form"
+              className="flex items-center justify-center gap-2 bg-[#095749] p-3 rounded-3xl text-xs uppercase text-white hover:bg-[#e3c1a0] w-fit"
             >
               Request Quotes <FaArrowRightLong />
-            </button>
+            </Link>
+            {/* </button> */}
           </div>
         </div>
         <div className="col-span-1 space-y-6 ">

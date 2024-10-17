@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="mx-6 py-10 text-center md:text-left">
         <div className="grid grid-cols-1 md:gap-14 md:grid-cols-3 gap-4">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-14">
-            <div className="grid text-center space-y-10">
+            {/* <div className="grid text-center space-y-10">
               <div className="flex flex-col space-y-3">
                 <h1 className="text-3xl uppercase font-bold whitespace-nowrap">
                   Find Us
@@ -15,7 +15,7 @@ const Footer = () => {
                 <span>123</span>
                 <h1>Nairobi, Kenya</h1>
               </div>
-            </div>
+            </div> */}
             <div className="grid text-center space-y-10">
               <div className="space-y-4">
                 <h1 className="mb-4 text-3xl font-bold flex justify-center uppercase md:justify-start whitespace-nowrap">
@@ -32,7 +32,7 @@ const Footer = () => {
                       <path d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z" />
                     </svg>
                   </span>
-                  New York, NY 10012, US
+                  Limuru, Nairobi Kenya
                 </p>
                 <p className="mb-4 flex items-center justify-center md:justify-start">
                   <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
@@ -45,8 +45,11 @@ const Footer = () => {
                       <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
                     </svg>
                   </span>
-                  <a href="" className="underline">
-                    info@example.com
+                  <a
+                    href="mailto:info@entrustproductions.org"
+                    className="underline"
+                  >
+                    info@entrustproductions.org
                   </a>
                 </p>
                 <p className="mb-4 flex items-center justify-center md:justify-start">
@@ -63,7 +66,7 @@ const Footer = () => {
                       />
                     </svg>
                   </span>
-                  <a href="">+254 234 567 88</a>
+                  <a href="tel:0748149943">+254748149943</a>
                 </p>
                 <p className="flex items-center justify-center font-thin md:justify-start whitespace-nowrap">
                   <span className="me-3 [&>svg]:h-5 [&>svg]:w-5">
@@ -104,7 +107,7 @@ const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
             <div className="grid space-y-10">
               <div>
                 <h6 className="mb-4 text-3xl flex justify-center font-semibold uppercase md:justify-start">
@@ -151,7 +154,7 @@ const Footer = () => {
         <div>
           <span>© 2024 Copyright: </span>
           <a className="font-semibold" href="">
-            Entrust Events. All rights reserved
+            Entrust Productions. All rights reserved
           </a>
         </div>
         <div className="flex justify-center">
